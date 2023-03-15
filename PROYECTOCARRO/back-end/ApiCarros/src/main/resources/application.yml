@@ -1,0 +1,22 @@
+spring:
+    datasource:
+        url: jdbc:sqlserver://localhost;databaseName=formulariocarros
+        #desarrolloweb.cgyt4xq662tc.us-east-2.rds.amazonaws.com
+        username: sa #admin  
+        password:  Laura mi amor 12345 #Basededatos
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver #Enable to SQL SERVER
+        #driver-class-name: oracle.jdbc.OracleDriver # Enable to ORACLE
+    jpa:
+        
+        #database-platform: org.hibernate.dialect.Oracle10gDialect #Enable to Oracle
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+            naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+        properties:
+            hibernate:
+              format_sql: true
+              use_sql_comments: true
+              dialect: org.hibernate.dialect.SQLServer2012Dialect # Enable to SQL SERVER
+server:
+    port: 8095
